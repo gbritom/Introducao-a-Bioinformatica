@@ -5,6 +5,7 @@ Linguagem: ```Python```
 IDE: ```Visual Studio Code```  
 ## Bibliotecas
 Foram utilizados as seguintes bibliotecas
-```numpy
+```
+numpy
 re
 ```
