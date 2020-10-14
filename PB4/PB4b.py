@@ -1,5 +1,6 @@
 import numpy as np
 import math
+np.seterr(divide='ignore') #remove avisos de divisão por zero
 D_pssm = [['Pos', '1', '2', '3', '4', 'Overall Freq'],
           ['A', 0, 0, 0, 0, 0],
           ['T', 0, 0, 0, 0, 0],
@@ -39,22 +40,24 @@ with open("D.motif.scores", "w")as op:
     D_pssm[2][5] = round(D_pssm[2][5]/4, 4)
     D_pssm[3][5] = round(D_pssm[3][5]/4, 4)
     D_pssm[4][5] = round(D_pssm[4][5]/4, 4)
-
+    D_array = np.array(D_pssm)
+    print(D_array), print('\n')
     for y in range(4):
         if y >= 1:
             D_pssm[1][y] = round(D_pssm[1][y]/D_pssm[1][5], 4)
             D_pssm[2][y] = round(D_pssm[2][y]/D_pssm[2][5], 4)
             D_pssm[3][y] = round(D_pssm[3][y]/D_pssm[3][5], 4)
             D_pssm[4][y] = round(D_pssm[4][y]/D_pssm[4][5], 4)
-
+    D_array = np.array(D_pssm)
+    print(D_array), print('\n')
     for y in range(4):
         if y >= 1:
             D_pssm[1][y] = round(np.log2(D_pssm[1][y]), 4)
             D_pssm[2][y] = round(np.log2(D_pssm[2][y]), 4)
             D_pssm[3][y] = round(np.log2(D_pssm[3][y]), 4)
             D_pssm[4][y] = round(np.log2(D_pssm[4][y]), 4)
-
     D_array = np.array(D_pssm)
+    print(D_array), print('\n')
     for x in range(5):
         linha = str(D_pssm[x])
         linha = linha.replace('[', '')
