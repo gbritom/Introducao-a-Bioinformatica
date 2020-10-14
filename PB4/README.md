@@ -31,6 +31,7 @@ Este projeto realiza a atividade PB4 proposta na disciplina de Introdução a Bi
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - [Python](https://www.python.org/)
+- [NumPy](https://numpy.org/)
 
 ## :white_check_mark: Pré requisitos ##
 
