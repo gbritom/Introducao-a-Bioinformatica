@@ -1,7 +1,5 @@
 <h1 align="center">PB4</h1>
 
-<hr> -->
-
 <p align="center">
   <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0; 
   <a href="#sparkles-funcionalidades">Funcionalidades</a> &#xa0; | &#xa0;
