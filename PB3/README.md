@@ -13,7 +13,7 @@ ou
 ```
 ## Uso
 Neste código é utilizado o conhecimento prévio utilizado no projeto "PB2", será feito um scan do arquivo, se a linha for uma sequência completa e a penúltima for outra sequência e a última uma quebra de linha, obterá sucesso ao executar.
-Se o usuário desejar pode informar apenas a sequência, chamando diretamente a função "NWAlign", por exemplo:
+Se o usuário desejar, pode informar apenas a sequência, chamando diretamente a função "NWAlign", por exemplo:
 ```
 NWAlign(SEQ1,SEQ2)
 ```
